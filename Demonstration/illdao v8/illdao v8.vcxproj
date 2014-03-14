@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CE4BE59D-CE0B-4F40-A53A-82C6F880C3AC}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>illdaov8</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="illdao prop.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="illdao prop.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\craig\Desktop\uni\uni year 2\uni second year\irrlicht-1.7.3\include;D:\Users\craig-uni\Desktop\irrlicht\irrlicht-1.7.2\irrlicht-1.7.2\include;C:\Users\craig\Desktop\irrlicht-1.7.3\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\craig\Desktop\uni\uni year 2\uni second year\irrlicht-1.7.3\lib\Win32-visualstudio;D:\Users\craig-uni\Desktop\irrlicht\irrlicht-1.7.2\irrlicht-1.7.2\lib\Win32-visualstudio;C:\Users\craig\Desktop\irrlicht-1.7.3\lib\Win32-visualstudio;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="state_bullet.cpp" />
+    <ClCompile Include="state_respawn.cpp" />
+    <ClCompile Include="state_stop.cpp" />
+    <ClCompile Include="camera_chase.cpp" />
+    <ClCompile Include="state_dead.cpp" />
+    <ClCompile Include="Drag.cpp" />
+    <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="EntityManager.cpp" />
+    <ClCompile Include="ForceRegistry.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Gravity.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MessageHandler.cpp" />
+    <ClCompile Include="state_movement.cpp" />
+    <ClCompile Include="state_normal.cpp" />
+    <ClCompile Include="Pistol.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="state_shooting.cpp" />
+    <ClCompile Include="state_spawn.cpp" />
+    <ClCompile Include="TurnHandler.cpp" />
+    <ClCompile Include="Map.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="state_bullet.h" />
+    <ClInclude Include="state_respawn.h" />
+    <ClInclude Include="state_stop.h" />
+    <ClInclude Include="camera.h" />
+    <ClInclude Include="camera_chase.h" />
+    <ClInclude Include="state_dead.h" />
+    <ClInclude Include="Drag.h" />
+    <ClInclude Include="Entity.h" />
+    <ClInclude Include="EntityManager.h" />
+    <ClInclude Include="ForceGenerator.h" />
+    <ClInclude Include="ForceRegistry.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="Gravity.h" />
+    <ClInclude Include="InputHandler.h" />
+    <ClInclude Include="KeyboardHandler.h" />
+    <ClInclude Include="Message.h" />
+    <ClInclude Include="MessageHandler.h" />
+    <ClInclude Include="state_movement.h" />
+    <ClInclude Include="state_normal.h" />
+    <ClInclude Include="Particle.h" />
+    <ClInclude Include="Pistol.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="state_shooting.h" />
+    <ClInclude Include="state_spawn.h" />
+    <ClInclude Include="State.h" />
+    <ClInclude Include="StateMachine.h" />
+    <ClInclude Include="TurnHandler.h" />
+    <ClInclude Include="Map.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="illdao prop.props" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

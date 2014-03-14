@@ -1,0 +1,17 @@
+﻿Build started 01/10/2012 18:33:57.
+     1>Project "C:\Users\craig\Desktop\uni\Demonstration\illdao v8\illdao v8.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\illdao v8.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+         illdao v8.vcxproj -> C:\Users\craig\Desktop\uni\Demonstration\Release\illdao v8.exe
+       FinalizeBuildStatus:
+         Deleting file "Release\illdao v8.unsuccessfulbuild".
+         Touching "Release\illdao v8.lastbuildstate".
+     1>Done Building Project "C:\Users\craig\Desktop\uni\Demonstration\illdao v8\illdao v8.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.03
